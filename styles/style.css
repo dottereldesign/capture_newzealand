@@ -191,4 +191,25 @@ h3 {
   color: white;
   z-index: 1006;
 }
+
+/* Latest Testimonials */
+.testimonial__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonial__wrapper .testimonial {
+  width: 400px;
+  margin: 2em;
+}
+
+.testimonial__wrapper .testimonial span {
+  display: block;
+  padding-top: 1em;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
