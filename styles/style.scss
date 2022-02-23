@@ -65,19 +65,28 @@
   }
 }
 
-.breadcrumb {
-  background-color: var(--blue);
-  color: white;
-}
+header {
+  .breadcrumb {
+    background-color: var(--blue);
+    color: white;
+  }
 
-.breadcrumb ul {
-  display: flex;
-  list-style: none;
-  padding: 0.8em;
-}
+  .breadcrumb ul {
+    display: flex;
+    list-style: none;
+    padding: 0.8em;
+  }
 
-.breadcrumb li {
-  padding: 0 0.3em 0 0.3em;
-  font-weight: 400;
-  text-transform: uppercase;
+  .breadcrumb li {
+    padding: 0 0.3em 0 0.3em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .heroimage {
+    object-fit: cover;
+    object-position: 40% 10%;
+    height: 600px;
+    width: 100%;
+  }
 }
