@@ -182,9 +182,39 @@ h3 {
     margin: 2em;
   }
 
+  .testimonial p {
+    font-style: italic;
+  }
+
   .testimonial span {
     display: block;
     padding-top: 1em;
-    font-weight: bold;
+    font-weight: 600;
   }
+}
+
+/* Feedback */
+.feedback {
+  margin-left: 18em;
+  margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+  background-color: var(--darkblue);
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 2em 0 2em 0;
+}
+
+footer ul {
+  font-weight: 400;
+  list-style: none;
+}
+footer ul button {
+  margin-top: 1em;
+  padding: 0.2em 3em 0.2em 3em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
