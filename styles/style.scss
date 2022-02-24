@@ -152,6 +152,7 @@ main {
   border-radius: 0;
   padding: 0.3em 0 0.3em 0;
   text-transform: uppercase;
+  background-color: white;
 }
 
 .column__3 {
@@ -195,6 +196,8 @@ h3 {
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
   color: var(--darkblue);
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
 }
 
 .h3underline {
