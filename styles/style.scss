@@ -17,6 +17,7 @@ p {
   padding-top: 1em;
   font-size: 1.1rem;
   line-height: 1.5em;
+  color: rgb(32, 32, 32);
 }
 
 li {
@@ -195,7 +196,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
-  color: var(--darkblue);
+  color: var(--blue);
   border-bottom: 1px solid white;
   padding-bottom: 2px;
 }
@@ -209,8 +210,8 @@ h3 {
 h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 1.3em;
-  color: var(--darkblue);
+  font-size: 1.5em;
+  color: var(--blue);
   padding: 1em 0 1em 0;
 }
 
@@ -298,7 +299,7 @@ main li {
   .testimonial span {
     display: block;
     padding-top: 1em;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.1rem;
   }
 }
