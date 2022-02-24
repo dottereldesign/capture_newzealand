@@ -15,6 +15,12 @@
 
 p {
   padding-top: 1em;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+li {
+  font-size: 1.1rem;
 }
 
 img {
@@ -35,8 +41,8 @@ img {
     font-size: 0.7rem;
 
     .navbar__logo {
-      width: 55px;
-      height: 55px;
+      width: 60px;
+      height: 60px;
     }
 
     .navbar__heading {
@@ -49,14 +55,14 @@ img {
       color: var(--brightyellow);
     }
 
-    .navbar__heading p {
+    .navbar__heading span {
       color: var(--dullyellow);
       word-spacing: 0.3rem;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     .navbar__heading h1,
-    p {
+    span {
       font-weight: 400;
     }
   }
@@ -71,9 +77,10 @@ img {
 
   &__links li {
     list-style: none;
-    padding: 0 1.5em 0 1.5em;
-    font-size: 1.2rem;
+    padding: 0 1.4em 0 1.4em;
+    font-size: 1.4rem;
     text-transform: uppercase;
+    font-weight: 400;
   }
 }
 
@@ -88,6 +95,11 @@ header {
     color: white;
   }
 
+  .breadcrumb span {
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+  }
+
   .breadcrumb ul {
     display: flex;
     list-style: none;
@@ -98,6 +110,7 @@ header {
     padding: 0 0.3em 0 0.3em;
     font-weight: 400;
     text-transform: uppercase;
+    font-size: 1.1rem;
   }
 
   .heroimage {
@@ -112,9 +125,9 @@ header {
 main {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-gap: 1.5em;
+  grid-gap: 2.5em;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1550px;
   margin: 0 auto;
 }
 
@@ -122,22 +135,40 @@ main {
   display: flex;
   flex-direction: column;
   background-color: #efefef;
-  height: 1800px;
+  height: 2300px;
+}
+
+.column__1 ul {
+  padding: 3em 0 0 1em;
 }
 
 .column__1 li {
   list-style: none;
 }
 
-.column__2 {
+.column__1 button {
+  margin: 0 4em 1em 0.7em;
+  font-size: 1.3em;
+  border-radius: 0;
+  padding: 0.3em 0 0.3em 0;
+  text-transform: uppercase;
 }
 
-.column__2 {
+.column__3 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5em;
+}
+
+.column__3 img {
+  height: auto;
+  width: 350px;
+  padding-top: 3em;
 }
 
 section {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1550px;
   margin: 0 auto;
 }
 
@@ -148,10 +179,10 @@ h2 {
   background-color: var(--opacitydarkblue);
   color: white;
   text-align: center;
-
+  word-spacing: 0.2em;
   font-weight: 400;
-  padding: 1em 0 1em 0;
-  font-size: 1.5rem;
+  padding: 0.8em 0 0.8em 0;
+  font-size: 1.8rem;
 }
 
 .h3__wrapper {
@@ -162,7 +193,7 @@ h3 {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: var(--darkblue);
 }
 
@@ -193,11 +224,11 @@ main li {
   column-gap: 50px;
 
   .workshop {
-    width: 400px;
+    width: 480px;
   }
 
   .workshop img {
-    width: 400px;
+    width: 480px;
     height: auto;
   }
 
@@ -219,7 +250,7 @@ main li {
     border-width: 1px;
     border-color: black;
     background-color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 400;
   }
 }
@@ -254,7 +285,7 @@ main li {
   flex-wrap: wrap;
 
   .testimonial {
-    width: 400px;
+    width: 480px;
   }
 
   .testimonial p {
@@ -265,6 +296,7 @@ main li {
     display: block;
     padding-top: 1em;
     font-weight: 600;
+    font-size: 1.1rem;
   }
 }
 
@@ -280,7 +312,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   color: white;
-  padding: 2em 0 2em 0;
+  padding: 4em 0 2em 0;
 }
 
 footer ul {
@@ -288,9 +320,19 @@ footer ul {
   list-style: none;
 }
 
+footer li {
+  font-size: 1.2rem;
+}
+
+footer li span {
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+}
+
 footer ul button {
   margin-top: 1em;
   padding: 0.2em 3em 0.2em 3em;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
