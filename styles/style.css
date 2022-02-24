@@ -18,6 +18,13 @@ img {
   display: block;
 }
 
+/* side margins along main */
+main {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 /* navigation bar */
 .navbar {
   display: -webkit-box;
@@ -58,12 +65,14 @@ img {
   color: var(--brightyellow);
 }
 
-.navbar__wrapper .navbar__heading h2 {
+.navbar__wrapper .navbar__heading p {
   color: var(--dullyellow);
+  word-spacing: 0.3rem;
+  font-size: 1rem;
 }
 
 .navbar__wrapper .navbar__heading h1,
-.navbar__wrapper h2 {
+.navbar__wrapper p {
   font-weight: 400;
 }
 
@@ -116,7 +125,7 @@ header .heroimage {
   width: 100%;
 }
 
-h3 {
+h2 {
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -129,6 +138,24 @@ h3 {
   font-size: 1.5rem;
 }
 
+.h3__wrapper {
+  margin: 4em 0 1em 0;
+}
+
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  color: var(--darkblue);
+}
+
+.h3underline {
+  width: 100%;
+  color: var(--darkblue);
+  background-color: var(--darkblue);
+}
+
 /* Upcoming Workshops - Content */
 .card__wrapper {
   display: -webkit-box;
@@ -139,11 +166,12 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
 }
 
 .card__wrapper .workshop {
   width: 400px;
-  margin: 2em;
 }
 
 .card__wrapper .workshop img {
@@ -168,6 +196,9 @@ h3 {
   border-style: solid;
   border-width: 1px;
   border-color: black;
+  background-color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 /* Upcoming Workshops - Card Image Colour and Text */
@@ -200,11 +231,14 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .testimonial__wrapper .testimonial {
   width: 400px;
-  margin: 2em;
 }
 
 .testimonial__wrapper .testimonial p {
@@ -219,8 +253,8 @@ h3 {
 
 /* Feedback */
 .feedback {
-  margin-left: 18em;
-  margin-bottom: 1em;
+  margin: 4em 0 1em 0;
+  text-align: left;
 }
 
 /* Footer */

@@ -17,6 +17,13 @@ img {
   display: block;
 }
 
+/* side margins along main */
+main {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 /* navigation bar */
 .navbar {
   display: flex;
@@ -45,12 +52,14 @@ img {
       color: var(--brightyellow);
     }
 
-    .navbar__heading h2 {
+    .navbar__heading p {
       color: var(--dullyellow);
+      word-spacing: 0.3rem;
+      font-size: 1rem;
     }
 
     .navbar__heading h1,
-    h2 {
+    p {
       font-weight: 400;
     }
   }
@@ -101,7 +110,7 @@ header {
   }
 }
 
-h3 {
+h2 {
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -114,15 +123,33 @@ h3 {
   font-size: 1.5rem;
 }
 
+.h3__wrapper {
+  margin: 4em 0 1em 0;
+}
+
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  color: var(--darkblue);
+}
+
+.h3underline {
+  width: 100%;
+  color: var(--darkblue);
+  background-color: var(--darkblue);
+}
+
 /* Upcoming Workshops - Content */
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  column-gap: 50px;
 
   .workshop {
     width: 400px;
-    margin: 2em;
   }
 
   .workshop img {
@@ -147,6 +174,9 @@ h3 {
     border-style: solid;
     border-width: 1px;
     border-color: black;
+    background-color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
   }
 }
 
@@ -176,10 +206,11 @@ h3 {
 .testimonial__wrapper {
   display: flex;
   justify-content: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
 
   .testimonial {
     width: 400px;
-    margin: 2em;
   }
 
   .testimonial p {
@@ -195,8 +226,8 @@ h3 {
 
 /* Feedback */
 .feedback {
-  margin-left: 18em;
-  margin-bottom: 1em;
+  margin: 4em 0 1em 0;
+  text-align: left;
 }
 
 /* Footer */
@@ -212,6 +243,7 @@ footer ul {
   font-weight: 400;
   list-style: none;
 }
+
 footer ul button {
   margin-top: 1em;
   padding: 0.2em 3em 0.2em 3em;
