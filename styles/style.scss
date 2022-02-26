@@ -413,6 +413,11 @@ main {
   flex-direction: column;
   background-color: #efefef;
   height: 2300px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .column__1 ul {
@@ -481,6 +486,42 @@ h4 {
 main li {
   padding: 0 0 0.7em 0;
   list-style-position: inside;
+}
+
+/* Main - 3 Columns (Media queries) */
+@media only screen and (max-width: 1500px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 2.5em;
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+  }
+
+  .column__3 img {
+    height: auto;
+    width: 300px;
+    padding-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .column__3 img {
+    height: auto;
+    width: 250px;
+    padding-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+  }
 }
 
 /* Upcoming Workshops - Content */
