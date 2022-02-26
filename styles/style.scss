@@ -28,7 +28,7 @@ img {
   display: block;
 }
 
-/* navigation bar */
+/* Navbar. */
 .navbar {
   display: flex;
   background-color: var(--darkblue);
@@ -68,6 +68,10 @@ img {
     }
   }
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
   &__links {
     color: white;
   }
@@ -85,41 +89,128 @@ img {
   }
 }
 
+/* Navbar media queries. */
+@media only screen and (max-width: 1700px) {
+  .navbar__links {
+    display: none;
+  }
+}
+
 .heroimage__wrapper {
   position: relative;
 }
 
-/* breadcrumb navigation */
+/* Breadcrumbs navigation. */
 header {
-  .breadcrumb {
+  .breadcrumbs {
     background-color: var(--blue);
     color: white;
   }
 
-  .breadcrumb span {
+  .breadcrumbs__mobile--cnz,
+  .breadcrumbs__mobile--ws,
+  .breadcrumbs__mobile--thr {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .breadcrumbs span {
     border-bottom: 1px solid white;
     padding-bottom: 2px;
   }
 
-  .breadcrumb ul {
+  .breadcrumbs ul {
     display: flex;
     list-style: none;
     padding: 0.8em;
   }
 
-  .breadcrumb li {
+  .breadcrumbs li {
     padding: 0 0.3em 0 0.3em;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1.1rem;
   }
+}
 
-  .heroimage {
-    object-fit: cover;
-    object-position: 40% 10%;
-    height: 600px;
-    width: 100%;
+@media only screen and (max-width: 1050px) {
+  header {
+    .breadcrumbs li {
+      font-size: 1rem;
+    }
   }
+}
+
+@media only screen and (max-width: 970px) {
+  header {
+    .breadcrumbs li {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  header {
+    .breadcrumbs li {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  header {
+    .breadcrumbs__mobile--cnz {
+      display: inline-block;
+    }
+
+    .breadcrumbs__desktop--cnz {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  header {
+    .breadcrumbs__mobile--ws {
+      display: inline-block;
+    }
+
+    .breadcrumbs__desktop--ws {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    .breadcrumbs__desktop--thr {
+      display: none;
+    }
+
+    .breadcrumbs__mobile--thr {
+      display: inline-block;
+    }
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  header {
+    .breadcrumbs li {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+/* Hero image. */
+.heroimage {
+  object-fit: cover;
+  object-position: 40% 10%;
+  height: 600px;
+  width: 100%;
 }
 
 /* side margins along main and section */

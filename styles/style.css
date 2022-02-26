@@ -29,7 +29,7 @@ img {
   display: block;
 }
 
-/* navigation bar */
+/* Navbar. */
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,6 +80,11 @@ img {
   font-weight: 400;
 }
 
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
 .navbar__links {
   color: white;
 }
@@ -98,22 +103,40 @@ img {
   font-weight: 400;
 }
 
+/* Navbar media queries. */
+@media only screen and (max-width: 1700px) {
+  .navbar__links {
+    display: none;
+  }
+}
+
 .heroimage__wrapper {
   position: relative;
 }
 
-/* breadcrumb navigation */
-header .breadcrumb {
+/* Breadcrumbs navigation. */
+header .breadcrumbs {
   background-color: var(--blue);
   color: white;
 }
 
-header .breadcrumb span {
+header .breadcrumbs__mobile--cnz,
+header .breadcrumbs__mobile--ws,
+header .breadcrumbs__mobile--thr {
+  display: none;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header .breadcrumbs span {
   border-bottom: 1px solid white;
   padding-bottom: 2px;
 }
 
-header .breadcrumb ul {
+header .breadcrumbs ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,14 +144,66 @@ header .breadcrumb ul {
   padding: 0.8em;
 }
 
-header .breadcrumb li {
+header .breadcrumbs li {
   padding: 0 0.3em 0 0.3em;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 1.1rem;
 }
 
-header .heroimage {
+@media only screen and (max-width: 1050px) {
+  header .breadcrumbs li {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  header .breadcrumbs li {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  header .breadcrumbs li {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  header .breadcrumbs__mobile--cnz {
+    display: inline-block;
+  }
+  header .breadcrumbs__desktop--cnz {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  header .breadcrumbs__mobile--ws {
+    display: inline-block;
+  }
+  header .breadcrumbs__desktop--ws {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .breadcrumbs__desktop--thr {
+    display: none;
+  }
+  header .breadcrumbs__mobile--thr {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  header .breadcrumbs li {
+    font-size: 0.7rem;
+  }
+}
+
+/* Hero image. */
+.heroimage {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 40% 10%;
