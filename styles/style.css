@@ -311,7 +311,7 @@ header .breadcrumbs li {
   }
 }
 
-/* Hero image. */
+/* Hero image and h2 */
 .heroimage {
   -o-object-fit: cover;
      object-fit: cover;
@@ -321,7 +321,60 @@ header .breadcrumbs li {
   width: 100%;
 }
 
-/* side margins along main and section */
+h2 {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: var(--opacitydarkblue);
+  color: white;
+  text-align: center;
+  word-spacing: 0.2em;
+  font-weight: 400;
+  padding: 0.8em 0 0.8em 0;
+  font-size: 1.8rem;
+}
+
+/* Hero image and h2 (Media Queries) */
+@media only screen and (max-width: 950px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  h2 {
+    font-size: 1.6rem;
+    padding: 0.7em 0 0.7em 0;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  h2 {
+    font-size: 1.5rem;
+    padding: 0.6em 0 0.6em 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 1.4rem;
+    padding: 0.5em 0 0.5em 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Main - 3 Columns */
 main {
   display: -ms-grid;
   display: grid;
@@ -383,19 +436,6 @@ section {
   width: 100%;
   max-width: 1550px;
   margin: 0 auto;
-}
-
-h2 {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-  background-color: var(--opacitydarkblue);
-  color: white;
-  text-align: center;
-  word-spacing: 0.2em;
-  font-weight: 400;
-  padding: 0.8em 0 0.8em 0;
-  font-size: 1.8rem;
 }
 
 .h3__wrapper {
