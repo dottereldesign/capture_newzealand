@@ -28,59 +28,61 @@ img {
   display: block;
 }
 
-/* Navbar. */
+/* Navbar */
 .navbar {
   display: flex;
   background-color: var(--darkblue);
   align-items: center;
   justify-content: space-between;
   padding: 1em;
+}
 
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    font-size: 0.7rem;
+/* Navbar - Logo & Heading */
+.navbar__wrapper {
+  display: flex;
+  align-items: center;
 
-    .navbar__logo {
-      width: 60px;
-      height: 60px;
-    }
-
-    .navbar__heading {
-      padding: 0 0 0 0.9em;
-    }
-
-    .navbar__heading h1 {
-      text-transform: uppercase;
-      letter-spacing: 0.3rem;
-      color: var(--brightyellow);
-    }
-
-    .navbar__heading span {
-      color: var(--dullyellow);
-      word-spacing: 0.3rem;
-      font-size: 1.2rem;
-    }
-
-    .navbar__heading h1,
-    span {
-      font-weight: 400;
-    }
+  .navbar__logo {
+    width: 60px;
+    height: 60px;
   }
+
+  .navbar__heading {
+    padding: 0 0 0 0.9em;
+  }
+
+  .navbar__heading h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: var(--brightyellow);
+  }
+
+  .navbar__heading span {
+    color: var(--dullyellow);
+    word-spacing: 0.3rem;
+    font-size: 1.2rem;
+  }
+
+  .navbar__heading h1,
+  span {
+    font-weight: 400;
+  }
+}
+
+/* Navbar - Links */
+.navbar__links {
+  color: white;
 
   a {
     text-decoration: none;
     color: white;
   }
-  &__links {
-    color: white;
-  }
 
-  &__links ul {
+  ul {
     display: flex;
   }
 
-  &__links li {
+  li {
     list-style: none;
     padding: 0 1.4em 0 1.4em;
     font-size: 1.4rem;
@@ -89,10 +91,140 @@ img {
   }
 }
 
-/* Navbar media queries. */
+/* Navbar (Media queries) */
 @media only screen and (max-width: 1700px) {
-  .navbar__links {
-    display: none;
+  .navbar {
+    &__links li {
+      list-style: none;
+      padding: 0 1.4em 0 1.4em;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (max-width: 1620px) {
+  .navbar {
+    &__links li {
+      list-style: none;
+      padding: 0 1.4em 0 1.4em;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .navbar {
+    &__links li {
+      list-style: none;
+      padding: 0 1.4em 0 1.4em;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+
+  .navbar__heading--title {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .navbar__wrapper {
+    .navbar__heading span {
+      color: var(--dullyellow);
+      word-spacing: 0.3rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .navbar__wrapper {
+    .navbar__heading--title {
+      font-size: 1.8rem;
+    }
+    .navbar__heading span {
+      color: var(--dullyellow);
+      word-spacing: 0.3rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .navbar__wrapper {
+    .navbar__heading--title {
+      font-size: 1.7rem;
+    }
+    .navbar__heading span {
+      color: var(--dullyellow);
+      word-spacing: 0.3rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .navbar__wrapper {
+    .navbar__heading--title {
+      font-size: 1.6rem;
+    }
+    .navbar__heading span {
+      color: var(--dullyellow);
+      word-spacing: 0.3rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .navbar__wrapper {
+    .navbar__heading--title {
+      font-size: 1.5rem;
+    }
+    .navbar__heading span {
+      color: var(--dullyellow);
+      word-spacing: 0.3rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .navbar {
+    &__links li {
+      list-style: none;
+      padding: 0 1.4em 0 1.4em;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .navbar {
+    padding: 0.8em;
+
+    &__links li {
+      list-style: none;
+      padding: 0 1.4em 0 1.4em;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .navbar {
+    &__links li {
+      display: none;
+    }
   }
 }
 
