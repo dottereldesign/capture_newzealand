@@ -22,7 +22,7 @@ p {
   padding-top: 1em;
   font-size: 1.1rem;
   line-height: 1.5em;
-  color: #202020;
+  color: #353535;
 }
 
 li {
@@ -538,6 +538,7 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 1em;
+    padding: 0 2em 0 2em;
   }
   .column__3 img {
     height: auto;
@@ -625,10 +626,11 @@ h3 {
   padding-bottom: 2px;
 }
 
-.h3underline {
+.h3__underline {
   width: 100%;
   color: var(--darkblue);
   background-color: var(--darkblue);
+  border-bottom: 1px solid var(--blue);
 }
 
 h4 {
@@ -639,12 +641,22 @@ h4 {
   padding: 1em 0 1em 0;
 }
 
+/* Section (Mobile queries) */
+@media only screen and (max-width: 1650px) {
+  section {
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 2em 0 2em;
+  }
+}
+
 main li {
   padding: 0 0 0.7em 0;
   list-style-position: inside;
 }
 
-/* Upcoming Workshops - Content */
+/* Upcoming Workshops */
 .card__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,8 +666,8 @@ main li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-column-gap: 55px;
+          column-gap: 55px;
 }
 
 .card__wrapper .workshop {
@@ -689,7 +701,6 @@ main li {
   font-weight: 400;
 }
 
-/* Upcoming Workshops - Card Image Colour and Text */
 .card__imgwrapper {
   position: relative;
 }
@@ -709,6 +720,29 @@ main li {
   margin: 0 1em 0.5em 1em;
   color: white;
   z-index: 1006;
+}
+
+/* Upcoming Workshops (Mobile Queries) */
+@media only screen and (max-width: 1650px) {
+  .card__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 55px;
+            column-gap: 55px;
+  }
+  .card__wrapper .workshop {
+    margin: 0 1em 4em 1em;
+  }
+  .card__wrapper .workshop img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Latest Testimonials */
@@ -738,6 +772,13 @@ main li {
   padding-top: 1em;
   font-weight: 400;
   font-size: 1.1rem;
+}
+
+/* Testimonial (Mobile queries) */
+@media only screen and (max-width: 1650px) {
+  .testimonial {
+    margin-bottom: 4em;
+  }
 }
 
 /* Feedback */
