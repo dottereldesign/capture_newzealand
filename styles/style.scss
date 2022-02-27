@@ -95,7 +95,7 @@ img {
   }
 }
 
-/* Navbar (Media queries) */
+/* Navbar (Media Queries) */
 @media only screen and (max-width: 1700px) {
   .navbar {
     &__links li {
@@ -275,7 +275,7 @@ img {
   position: relative;
 }
 
-/* Breadcrumbs navigation. */
+/* Breadcrumbs Navigation. */
 header {
   .breadcrumbs {
     background-color: var(--blue);
@@ -393,9 +393,11 @@ header {
   }
 }
 
-/* Hero image and h2 */
+/* Hero Image and h2 */
 .heroimage {
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: 40% 10%;
   object-position: 40% 10%;
   height: 600px;
   width: 100%;
@@ -414,7 +416,7 @@ h2 {
   font-size: 1.8rem;
 }
 
-/* Hero image and h2 (Media Queries) */
+/* Hero Image and h2 (Media Queries) */
 @media only screen and (max-width: 950px) {
   h2 {
     font-size: 1.7rem;
@@ -438,7 +440,7 @@ h2 {
 @media only screen and (max-width: 800px) {
   h2 {
     font-size: 1.4rem;
-    padding: 0.5em 0 0.5em 0;
+    padding: 0.5em 0em 0.5em 0em;
   }
 }
 
@@ -464,7 +466,7 @@ main {
   margin: 0 auto;
 }
 
-/* Column 1 & 2 wrapper */
+/* Column 1 & 2 Wrapper */
 .column__wrapper {
   display: grid;
   grid-template-columns: 1 3;
@@ -513,7 +515,7 @@ main {
   margin: 0 4em 1em 0.7em;
   font-size: 1.3em;
   border-radius: 0;
-  padding: 0.3em 0 0.3em 0;
+  padding: 0.3em 0em 0.3em 0em;
   text-transform: uppercase;
   background-color: white;
 }
@@ -530,14 +532,14 @@ main {
   padding-top: 3em;
 }
 
-/* Main - 3 Columns (Media queries) */
+/* Main - 3 Columns (Media Queries) */
 @media only screen and (max-width: 1600px) {
   .column__1--container {
     width: 300px;
   }
 
   .column__1--container button {
-    margin: 0 3em 1em 0.7em;
+    margin: 0em 3em 1em 0.7em;
   }
 }
 
@@ -669,7 +671,7 @@ main {
   }
 }
 
-/* Section content */
+/* Section */
 section {
   width: 100%;
   max-width: 1550px;
@@ -705,7 +707,7 @@ h4 {
   padding: 1em 0 1em 0;
 }
 
-/* Section (Mobile queries) */
+/* Section (Media Queries) */
 @media only screen and (max-width: 1650px) {
   section {
     width: 100%;
@@ -725,6 +727,7 @@ main li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  -moz-column-gap: 55px;
   column-gap: 55px;
 
   .workshop {
@@ -780,12 +783,13 @@ main li {
   z-index: 1006;
 }
 
-/* Upcoming Workshops (Mobile Queries) */
+/* Upcoming Workshops (Media Queries) */
 @media only screen and (max-width: 1650px) {
   .card__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    -moz-column-gap: 55px;
     column-gap: 55px;
 
     .workshop {
@@ -803,6 +807,7 @@ main li {
 .testimonial__wrapper {
   display: flex;
   justify-content: center;
+  -moz-column-gap: 50px;
   column-gap: 50px;
   flex-wrap: wrap;
 
@@ -822,7 +827,7 @@ main li {
   }
 }
 
-/* Testimonial (Mobile queries) */
+/* Latest Testimonial (Media Queries) */
 @media only screen and (max-width: 1650px) {
   .testimonial {
     margin-bottom: 4em;
@@ -858,10 +863,14 @@ footer li span {
   font-size: 1.3rem;
 }
 
-footer ul button {
+footer button {
   margin-top: 1em;
   padding: 0.2em 3em 0.2em 3em;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+/* Footer (Media Queries) */
+@media only screen and (max-width: 1650px) {
 }

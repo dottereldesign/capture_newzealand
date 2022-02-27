@@ -108,7 +108,7 @@ img {
   font-weight: 400;
 }
 
-/* Navbar (Media queries) */
+/* Navbar (Media Queries) */
 @media only screen and (max-width: 1700px) {
   .navbar__links li {
     list-style: none;
@@ -260,7 +260,7 @@ img {
   position: relative;
 }
 
-/* Breadcrumbs navigation. */
+/* Breadcrumbs Navigation. */
 header .breadcrumbs {
   background-color: var(--blue);
   color: white;
@@ -358,12 +358,12 @@ header .breadcrumbs li {
   }
 }
 
-/* Hero image and h2 */
+/* Hero Image and h2 */
 .heroimage {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 40% 10%;
-     object-position: 40% 10%;
+  object-position: 40% 10%;
   height: 600px;
   width: 100%;
 }
@@ -381,7 +381,7 @@ h2 {
   font-size: 1.8rem;
 }
 
-/* Hero image and h2 (Media Queries) */
+/* Hero Image and h2 (Media Queries) */
 @media only screen and (max-width: 950px) {
   h2 {
     font-size: 1.7rem;
@@ -405,7 +405,7 @@ h2 {
 @media only screen and (max-width: 800px) {
   h2 {
     font-size: 1.4rem;
-    padding: 0.5em 0 0.5em 0;
+    padding: 0.5em 0em 0.5em 0em;
   }
 }
 
@@ -433,7 +433,7 @@ main {
   margin: 0 auto;
 }
 
-/* Column 1 & 2 wrapper */
+/* Column 1 & 2 Wrapper */
 .column__wrapper {
   display: -ms-grid;
   display: grid;
@@ -492,7 +492,7 @@ main {
   margin: 0 4em 1em 0.7em;
   font-size: 1.3em;
   border-radius: 0;
-  padding: 0.3em 0 0.3em 0;
+  padding: 0.3em 0em 0.3em 0em;
   text-transform: uppercase;
   background-color: white;
 }
@@ -514,13 +514,13 @@ main {
   padding-top: 3em;
 }
 
-/* Main - 3 Columns (Media queries) */
+/* Main - 3 Columns (Media Queries) */
 @media only screen and (max-width: 1600px) {
   .column__1--container {
     width: 300px;
   }
   .column__1--container button {
-    margin: 0 3em 1em 0.7em;
+    margin: 0em 3em 1em 0.7em;
   }
 }
 
@@ -656,7 +656,7 @@ main {
   }
 }
 
-/* Section content */
+/* Section */
 section {
   width: 100%;
   max-width: 1550px;
@@ -692,7 +692,7 @@ h4 {
   padding: 1em 0 1em 0;
 }
 
-/* Section (Mobile queries) */
+/* Section (Media Queries) */
 @media only screen and (max-width: 1650px) {
   section {
     width: 100%;
@@ -773,7 +773,7 @@ main li {
   z-index: 1006;
 }
 
-/* Upcoming Workshops (Mobile Queries) */
+/* Upcoming Workshops (Media Queries) */
 @media only screen and (max-width: 1650px) {
   .card__wrapper {
     display: -webkit-box;
@@ -825,7 +825,7 @@ main li {
   font-size: 1.1rem;
 }
 
-/* Testimonial (Mobile queries) */
+/* Latest Testimonial (Media Queries) */
 @media only screen and (max-width: 1650px) {
   .testimonial {
     margin-bottom: 4em;
@@ -865,11 +865,13 @@ footer li span {
   font-size: 1.3rem;
 }
 
-footer ul button {
+footer button {
   margin-top: 1em;
   padding: 0.2em 3em 0.2em 3em;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.5rem;
 }
+
+/* Footer (Media Queries) */
 /*# sourceMappingURL=style.css.map */
