@@ -1,5 +1,5 @@
 :root {
-  --darkblue: #1a3c4f;
+  --darkblue: #024163;
   --opacitydarkblue: rgb(26, 60, 79, 0.8);
   --blue: #09608e;
   --brightyellow: #fafa50;
@@ -58,6 +58,10 @@ img {
 }
 
 /* Navbar - Logo & Heading */
+.navbar__heading--title {
+  margin-bottom: 0.2em;
+}
+
 .navbar__wrapper {
   display: flex;
   align-items: center;
@@ -73,8 +77,9 @@ img {
 
   .navbar__heading h1 {
     text-transform: uppercase;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
     color: var(--brightyellow);
+    word-spacing: 0.2em;
   }
 
   .navbar__heading span {
@@ -532,12 +537,13 @@ main {
 }
 
 .column__1--container button {
-  margin: 0 4em 1em 0.7em;
+  margin: 0 3em 1em 0.7em;
   font-size: 1.3em;
   border-radius: 0;
-  padding: 0.3em 0em 0.3em 0em;
+  padding: 0.5em 0em 0.5em 0em;
   text-transform: uppercase;
   background-color: white;
+  color: rgb(41, 41, 41);
 }
 
 .column__1--container ul li {
@@ -548,6 +554,39 @@ main {
 .column__2 li {
   color: rgb(77, 77, 77);
 }
+
+.itinerary__droplist ul {
+  margin-top: 2em;
+}
+
+.itinerary__droplist li {
+  padding: 0 0 0.7em 0;
+  list-style-position: inside;
+  font-size: 1.4rem;
+  font-weight: 400;
+  list-style-type: none;
+  position: relative;
+  padding-left: 1em;
+}
+
+.itinerary__droplist li:before {
+  content: "\25BA \0020";
+  font-size: 1.1rem;
+  color: var(--darkblue);
+  position: absolute;
+  top: 4px;
+  left: -2px;
+}
+
+/* content: '';
+   position: absolute;
+   border-right:2px solid black;
+   border-bottom:2px solid black;
+   width:10px;
+   height:10px;
+   top: calc(50% - 4px);
+   left: -20px;
+   transform: translateY(-50%) rotate(-45deg); */
 
 .fees {
   li {
@@ -746,7 +785,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
-  color: var(--blue);
+  color: var(--darkblue);
   border-bottom: 1px solid white;
   padding-bottom: 2px;
 }
