@@ -948,11 +948,24 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   color: white;
-  padding: 4em 0 2em 0;
+  padding: 4em 0 4em 0;
+}
+
+footer li:first-child {
+  padding-bottom: 0.2em;
+}
+
+.footer__list--1 li {
+  padding-bottom: 0.2em;
+}
+
+.footer__list {
+  width: 850px;
+}
+
+.footer__list--1 {
+  margin-left: 1em;
 }
 
 footer ul {
@@ -971,10 +984,13 @@ footer li span {
 
 footer button {
   margin-top: 1em;
-  padding: 0.2em 3em 0.2em 3em;
+  padding: 0.3em 2.3em 0.3em 2.3em;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  color: #303030;
+  border-style: solid;
+  border-color: grey;
 }
 
 button:hover {
