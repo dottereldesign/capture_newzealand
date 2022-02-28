@@ -1,5 +1,5 @@
 :root {
-  --darkblue: #024163;
+  --darkblue: #1a3c4f;
   --opacitydarkblue: rgb(26, 60, 79, 0.8);
   --blue: #09608e;
   --brightyellow: #fafa50;
@@ -530,6 +530,7 @@ main {
 
 .column__1--container ul {
   padding: 3em 0 0 1em;
+  margin-bottom: 0.5em;
 }
 
 .column__1--container li {
@@ -537,10 +538,13 @@ main {
 }
 
 .column__1--container button {
-  margin: 0 3em 1em 0.7em;
+  margin: 0em 0em 1em 0.7em;
   font-size: 1.3em;
   border-radius: 0;
-  padding: 0.5em 0em 0.5em 0em;
+  border-style: solid;
+  border-color: rgb(99, 99, 99);
+  padding: 0.5em 0 0.5em 0;
+  width: 250px;
   text-transform: uppercase;
   background-color: white;
   color: rgb(41, 41, 41);
@@ -560,7 +564,7 @@ main {
 }
 
 .itinerary__droplist li {
-  padding: 0 0 0.7em 0;
+  padding: 0 0 0.9em 0;
   list-style-position: inside;
   font-size: 1.4rem;
   font-weight: 400;
@@ -590,9 +594,10 @@ main {
 
 .fees {
   li {
-    padding: 0 0 0.7em 0;
+    padding: 0 0 0.6em 0;
     list-style-position: inside;
     font-size: 1.2rem;
+    color: rgb(58, 58, 58);
   }
 }
 
@@ -606,6 +611,10 @@ main {
   height: auto;
   width: 350px;
   padding-top: 2.5em;
+}
+
+.terms__padding {
+  padding: 0;
 }
 
 /* Main - 3 Columns (Media Queries) */
@@ -820,15 +829,16 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  -moz-column-gap: 55px;
-  column-gap: 55px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  margin-bottom: 6em;
 
   .workshop {
-    width: 480px;
+    width: 490px;
   }
 
   .workshop img {
-    width: 480px;
+    width: 100%;
     height: auto;
   }
 
@@ -844,14 +854,15 @@ h4 {
 
   .workshop button {
     margin-top: 1em;
-    padding: 0.2em 0.4em 0.2em 0.4em;
+    padding: 0.4em 0.5em 0.4em 0.5em;
     border-radius: 0;
     border-style: solid;
-    border-width: 1px;
-    border-color: black;
+    border-width: 2px;
+    border-color: rgb(107, 107, 107);
     background-color: white;
     font-size: 1.2rem;
     font-weight: 400;
+    color: rgb(75, 75, 75);
   }
 }
 
@@ -906,7 +917,7 @@ h4 {
   flex-wrap: wrap;
 
   .testimonial {
-    width: 480px;
+    width: 483px;
   }
 
   .testimonial p {
@@ -917,8 +928,9 @@ h4 {
     display: block;
     padding-top: 1em;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: "Hind", sans-serif;
+    color: rgb(51, 51, 51);
   }
 }
 
@@ -931,7 +943,7 @@ h4 {
 
 /* Feedback */
 .feedback {
-  margin: 4em 0 1em 0;
+  margin: 2em 0 1em 0;
   text-align: left;
 }
 
@@ -964,6 +976,10 @@ footer button {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /* Footer (Media Queries) */
