@@ -35,7 +35,7 @@ p {
   padding-top: 1em;
   font-size: 1.2rem;
   line-height: 1.5em;
-  color: rgb(77, 77, 77);
+  color: rgb(59, 59, 59);
   font-weight: 400;
 }
 
@@ -483,6 +483,7 @@ main {
   width: 100%;
   max-width: 1550px;
   margin: 0 auto;
+  margin-bottom: 7em;
 }
 
 /* Column 1 & 2 Wrapper */
@@ -797,7 +798,7 @@ h4 {
   }
 
   .workshop span {
-    color: rgb(216, 0, 0);
+    color: rgb(141, 0, 0);
     display: block;
     padding-top: 1em;
   }
@@ -822,9 +823,9 @@ h4 {
 .cardimage__color {
   position: absolute;
   width: 100%;
-  height: 65px;
+  height: 100px;
   background-color: var(--opacitydarkblue);
-  z-index: 1005;
+  z-index: 1001;
   bottom: 0;
 }
 
@@ -832,8 +833,9 @@ h4 {
   position: absolute;
   bottom: 0;
   margin: 0 1em 0.5em 1em;
-  color: white;
-  z-index: 1006;
+  color: rgb(226, 226, 226);
+  z-index: 1002;
+  font-size: 1.6rem;
 }
 
 /* Upcoming Workshops (Media Queries) */
@@ -877,6 +879,7 @@ h4 {
     padding-top: 1em;
     font-weight: 400;
     font-size: 1.1rem;
+    font-family: "Hind", sans-serif;
   }
 }
 
