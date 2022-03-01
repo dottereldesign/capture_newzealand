@@ -843,6 +843,7 @@ h4 {
 .card__imgwrapper p {
   position: absolute;
   bottom: 0;
+  padding-top: 0;
   margin: 0 1em 0.5em 1em;
   color: rgb(226, 226, 226);
   z-index: 1002;
@@ -866,6 +867,37 @@ h4 {
       width: 100%;
       height: auto;
     }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .card__imgwrapper p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .card__imgwrapper p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .card__imgwrapper p {
+    font-size: 1.3rem;
+    margin: 0;
+    padding-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .card__wrapper {
+    margin-top: 1em;
+    margin-bottom: 0em;
+  }
+
+  .card__wrapper .workshop {
+    margin: 0 1em 2em 1em;
   }
 }
 
@@ -902,9 +934,23 @@ h4 {
   }
 }
 
+@media only screen and (max-width: 1079px) {
+  section {
+    .testimonial {
+      margin-bottom: 2em;
+    }
+  }
+}
+
 @media only screen and (max-width: 515px) {
-  .testimonial {
-    margin-bottom: 4em;
+  section {
+    padding: 0;
+  }
+  .h3__wrapper {
+    margin: 4em 1em 0 1em;
+  }
+  .testimonial__wrapper {
+    margin: 0 1em 0 1em;
   }
 }
 
@@ -912,6 +958,12 @@ h4 {
 .feedback {
   margin: 2em 0 1em 0;
   text-align: left;
+}
+
+@media only screen and (max-width: 515px) {
+  .feedback {
+    margin: 2em 1em 1em 1em;
+  }
 }
 
 /* Footer */
