@@ -902,6 +902,12 @@ h4 {
   }
 }
 
+@media only screen and (max-width: 515px) {
+  .testimonial {
+    margin-bottom: 4em;
+  }
+}
+
 /* Feedback */
 .feedback {
   margin: 2em 0 1em 0;
@@ -967,5 +973,26 @@ button:hover {
 }
 
 /* Footer (Media Queries) */
-@media only screen and (max-width: 1650px) {
+@media only screen and (max-width: 550px) {
+  footer {
+    background-color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    color: rgb(235, 235, 235);
+    padding: 2em 0 2em 0;
+    justify-content: center;
+  }
+
+  .footer__list {
+    width: auto;
+    margin: 0 0 2em;
+  }
+
+  .footer__list--1 {
+    margin-left: 1em;
+  }
+
+  .footer__list--2 {
+    margin: 0 0 0 1em;
+  }
 }
