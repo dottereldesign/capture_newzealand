@@ -21,11 +21,6 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-}
-
 .navbar__heading--subheading {
   font-family: "Montserrat", sans-serif;
 }
@@ -46,6 +41,11 @@ li {
 
 img {
   display: block;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
 }
 
 /* Navbar */
@@ -116,178 +116,114 @@ img {
   }
 }
 
+.icon {
+  display: none;
+}
+
 /* Navbar (Media Queries) */
-@media only screen and (max-width: 1700px) {
-  .navbar {
-    &__links li {
-      list-style: none;
-      padding: 0 1.4em 0 1.4em;
+@media only screen and (max-width: 1650px) {
+  .navbar__links {
+    li {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .navbar__links {
+    li {
       font-size: 1.3rem;
-      text-transform: uppercase;
-      font-weight: 400;
     }
   }
 }
 
-@media only screen and (max-width: 1620px) {
-  .navbar {
-    &__links li {
-      list-style: none;
-      padding: 0 1.4em 0 1.4em;
+@media only screen and (max-width: 1500px) {
+  .navbar__links {
+    li {
       font-size: 1.2rem;
-      text-transform: uppercase;
-      font-weight: 400;
-    }
-  }
-}
-
-@media only screen and (max-width: 1550px) {
-  .navbar {
-    &__links li {
-      list-style: none;
-      padding: 0 1.4em 0 1.4em;
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      font-weight: 400;
     }
   }
 
-  .navbar__heading--title {
-    font-size: 1.9rem;
-  }
-}
-
-@media only screen and (max-width: 1550px) {
   .navbar__wrapper {
-    .navbar__heading span {
-      color: var(--dullyellow);
-      word-spacing: 0.3rem;
-      font-size: 1.1rem;
+    .navbar__logo {
+      width: 60px;
+      height: 60px;
     }
-  }
-}
 
-@media only screen and (max-width: 1450px) {
-  .navbar__wrapper {
-    .navbar__heading--title {
-      font-size: 1.8rem;
-    }
-    .navbar__heading span {
-      color: var(--dullyellow);
-      word-spacing: 0.3rem;
-      font-size: 1rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 1430px) {
-  .navbar__wrapper {
-    .navbar__heading--title {
-      font-size: 1.7rem;
-    }
-    .navbar__heading span {
-      color: var(--dullyellow);
-      word-spacing: 0.3rem;
-      font-size: 0.9rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 1420px) {
-  .navbar__wrapper {
-    .navbar__heading--title {
-      font-size: 1.6rem;
-    }
-    .navbar__heading span {
-      color: var(--dullyellow);
-      word-spacing: 0.3rem;
-      font-size: 0.9rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 1390px) {
-  .navbar__wrapper {
-    .navbar__heading--title {
+    .navbar__heading h1 {
       font-size: 1.5rem;
     }
+
     .navbar__heading span {
-      color: var(--dullyellow);
-      word-spacing: 0.3rem;
-      font-size: 0.9rem;
+      font-size: 1.1rem;
     }
+  }
+
+  .navbar {
+    padding: 0.9em;
   }
 }
 
-@media only screen and (max-width: 1370px) {
-  .navbar {
-    &__links li {
-      list-style: none;
-      padding: 0 1.4em 0 1.4em;
+@media only screen and (max-width: 1400px) {
+  .navbar__links {
+    li {
+      font-size: 1.1rem;
+    }
+  }
+
+  .navbar__wrapper {
+    .navbar__logo {
+      width: 55px;
+      height: 55px;
+    }
+
+    .navbar__heading h1 {
+      font-size: 1.4rem;
+    }
+
+    .navbar__heading span {
       font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: 400;
     }
   }
 }
 
 @media only screen and (max-width: 1300px) {
-  .navbar {
-    padding: 0.8em;
-
-    &__links li {
-      list-style: none;
-      padding: 0 1.4em 0 1.4em;
-      font-size: 0.95rem;
-      text-transform: uppercase;
-      font-weight: 400;
-    }
-  }
-}
-
-@media only screen and (max-width: 1250px) {
-  .navbar {
-    &__links li {
-      display: none;
-    }
-  }
-}
-
-@media only screen and (max-width: 463px) {
   .navbar__wrapper {
-    .navbar__heading--title {
+    .navbar__logo {
+      width: 55px;
+      height: 55px;
+    }
+
+    .navbar__heading h1 {
+      font-size: 1.4rem;
+    }
+
+    .navbar__heading span {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .navbar__links li {
+    display: none;
+  }
+
+  .navbar__links a.icon {
+    float: right;
+    display: block;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .navbar__wrapper {
+    .navbar__heading h1 {
       font-size: 1.3rem;
     }
-    .navbar__heading span {
-      color: var(--dullyellow);
-      word-spacing: 0.3rem;
-      font-size: 0.8rem;
-    }
-  }
-}
 
-@media only screen and (max-width: 426px) {
-  .navbar__wrapper {
-    .navbar__heading--title {
-      font-size: 1.2rem;
-    }
     .navbar__heading span {
-      color: var(--dullyellow);
-      word-spacing: 0.3rem;
-      font-size: 0.8rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 408px) {
-  .navbar__wrapper {
-    .navbar__heading--title {
-      font-size: 1.1rem;
-    }
-    .navbar__heading span {
-      color: var(--dullyellow);
-      word-spacing: 0.3rem;
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
 }
@@ -336,7 +272,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1200px) {
   header {
     .breadcrumbs li {
       font-size: 1rem;
@@ -344,7 +280,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1100px) {
   header {
     .breadcrumbs li {
       font-size: 0.9rem;
@@ -352,7 +288,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 1000px) {
   header {
     .breadcrumbs li {
       font-size: 0.8rem;
@@ -360,7 +296,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 900px) {
   header {
     .breadcrumbs__mobile--cnz {
       display: inline-block;
@@ -372,7 +308,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 750px) {
   header {
     .breadcrumbs__mobile--ws {
       display: inline-block;
@@ -384,7 +320,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   header {
     .breadcrumbs__desktop--thr {
       display: none;
@@ -396,7 +332,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 505px) {
+@media only screen and (max-width: 550px) {
   header {
     .breadcrumbs li {
       font-size: 0.7rem;
@@ -404,7 +340,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 470px) {
   header {
     .breadcrumbs__mobile--fpe {
       display: inline-block;
