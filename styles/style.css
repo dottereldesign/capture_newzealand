@@ -233,6 +233,21 @@ span.keeptogether {
   }
 }
 
+@media only screen and (max-width: 455px) {
+  .navbar__wrapper .navbar__heading h1 {
+    font-size: 1.3rem;
+    margin-right: 1em;
+  }
+  .navbar__wrapper .navbar__heading--subheading {
+    font-size: 0.9rem;
+    margin-right: 1em;
+  }
+  nav {
+    padding: 0.7em;
+    height: 110px;
+  }
+}
+
 .heroimage__wrapper {
   position: relative;
 }
