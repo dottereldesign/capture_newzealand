@@ -63,7 +63,7 @@ h2 {
 }
 
 /* Navbar */
-.navbar {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,6 +75,7 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1em;
+  height: 92px;
 }
 
 /* Navbar - Logo & Heading */
@@ -142,10 +143,6 @@ h2 {
   font-weight: 400;
 }
 
-.icon {
-  display: none;
-}
-
 span.keeptogether {
   white-space: nowrap;
 }
@@ -177,7 +174,7 @@ span.keeptogether {
   .navbar__wrapper .navbar__heading--subheading {
     font-size: 1.1rem;
   }
-  .navbar {
+  nav {
     padding: 0.9em;
   }
 }
@@ -231,13 +228,100 @@ span.keeptogether {
     font-size: 0.9rem;
     margin-right: 1em;
   }
-  .navbar {
+  nav {
     padding: 0.7em;
   }
 }
 
 .heroimage__wrapper {
   position: relative;
+}
+
+.hamburger__icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger__icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.open .hamburger__icon--bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .hamburger__icon--bar2 {
+  opacity: 0;
+}
+
+.open .hamburger__icon--bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobilemenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+  height: 100%;
+}
+
+.mobilemenu {
+  display: none;
+  position: absolute;
+  top: 92px;
+  left: 0;
+  height: calc(100vh - 92px);
+  width: 100%;
+  background-color: #09608e;
+  padding-top: 1em;
+  z-index: 9000;
+}
+
+.mobilemenu li {
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 0.51em;
+}
+
+.mobilemenu a {
+  color: white;
+}
+
+.mobilemenu li {
+  list-style: none;
+}
+
+.hamburger__icon {
+  display: none;
+}
+
+/* Nav (Media Queries) */
+@media only screen and (max-width: 1300px) {
+  header .navbar__links {
+    display: none;
+  }
+  .hamburger__icon {
+    display: block;
+  }
 }
 
 /* Breadcrumbs Navigation. */
