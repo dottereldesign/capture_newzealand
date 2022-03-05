@@ -481,8 +481,7 @@ header {
 /* Hero Image and h2 (Media Queries) */
 @media only screen and (max-width: 1000px) {
   h2 {
-    font-size: 1.6rem;
-    padding: 0.9em 0 0.9em 0;
+    padding: 0.3em 1em 0.3em 1em;
   }
 
   .heroimage {
@@ -492,8 +491,7 @@ header {
 
 @media only screen and (max-width: 900px) {
   h2 {
-    font-size: 1.5rem;
-    padding: 0.8em 0 0.8em 0;
+    font-size: 1.6em;
   }
 
   .heroimage {
@@ -502,32 +500,18 @@ header {
 }
 
 @media only screen and (max-width: 830px) {
-  h2 {
-    font-size: 1.4rem;
-    padding: 0.7em 0em 0.7em 0em;
-  }
-
   .heroimage {
     height: 550px;
   }
 }
 
 @media only screen and (max-width: 770px) {
-  h2 {
-    font-size: 1.3rem;
-  }
-
   .heroimage {
     height: 500px;
   }
 }
 
 @media only screen and (max-width: 710px) {
-  h2 {
-    font-size: 1.2rem;
-    padding: 0.7em 1em 0.7em 1em;
-  }
-
   .heroimage {
     height: 450px;
   }
@@ -1124,4 +1108,10 @@ button:hover {
   .footer__list--2 {
     margin: 0 0 0 1em;
   }
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
 }
