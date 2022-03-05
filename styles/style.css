@@ -305,18 +305,23 @@ span.keeptogether {
   height: calc(100vh - 92px);
   width: 100%;
   background-color: #09608e;
-  padding-top: 1em;
   z-index: 9000;
 }
 
 .mobilemenu li {
   font-size: 2em;
   font-family: "Montserrat", sans-serif;
-  padding-bottom: 0.51em;
+  padding: 0.5em 0 0.5em 0;
+  width: 100%;
+  text-align: center;
 }
 
 .mobilemenu a {
   color: white;
+}
+
+.mobilemenu li:hover {
+  background-color: #0b76af;
 }
 
 .mobilemenu li {
@@ -334,6 +339,13 @@ span.keeptogether {
   }
   .hamburger__icon {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .mobilemenu {
+    height: calc(100vh - 110px);
+    top: 110px;
   }
 }
 
@@ -575,6 +587,28 @@ main {
   color: #4d4d4d;
 }
 
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
 .itinerary__droplist ul {
   margin-top: 2em;
 }
@@ -587,6 +621,10 @@ main {
   list-style-type: none;
   position: relative;
   padding-left: 1em;
+}
+
+.itinerary__droplist p {
+  margin-bottom: 1.5em;
 }
 
 .itinerary__droplist li:before {
